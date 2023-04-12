@@ -1,9 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="My website template." />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Ryan Duffett" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.yellow-amber.min.css"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="Tim-apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="Tim-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="Tim-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>-TEMPLATE-</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">-Website Template-</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <img src="TimIMG.JPG" alt="style.css" />
+        <div class="page-content">Calculate square root..</div>
+        <!-- Simple Textfield for integers-->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <!-- input pattern attribute -->
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="[0-9]*"
+              id="demo-input"
+            />
+            <!-- mdl-textfield__label -->
+            <label class="mdl-textfield__label" for="demo-input"
+              >Enter a number</label
+            >
+            <!-- class "mdl-textfield__error" -->
+            <span class="mdl-textfield__error">Input is not a number</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="buttonClicked()"
+        >
+          Click me!
+        </button>
+        <div class="page-content" id="button-answer">Button answer..</div>
+      </main>
+    </div>
   </body>
 </html>
